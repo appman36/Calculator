@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн калькулятор</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="calculator">
+        <button class="dark-mode" onclick="toggleTheme()">Тёмная тема</button>
+        <h1>Калькулятор</h1>
+        <input type="number" id="num1" placeholder="Введите первое значение">
+        <select id="operation">
+            <option value="add">Сложение</option>
+            <option value="subtract">Вычитание</option>
+            <option value="multiply">Умножение</option>
+            <option value="divide">Деление</option>
+        </select>
+        <input type="number" id="num2" placeholder="Введите второе значение">
+       
+        <button onclick="calculate()">Посчитать</button>
+        <div id="result"></div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
